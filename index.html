@@ -16,6 +16,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     gtag('js', new Date());
 
     gtag('config', 'G-R4809M8LHK');
+
+    function executeDataLayerScript() {
+      var dataLayer = window.dataLayer || [];
+      dataLayer.push({
+        'event': 'get started button click',
+        'author': 'admin',
+        'title': 'the first button was clicked'
+      });
+    }
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -71,7 +80,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="content">
       <h1>Welcome to The Test Website</h1>
       <p>Created by V. Veselov, 122m-23-2</p>
-      <a href="second-page.html">Get Started</a>
+      <button onclick="executeDataLayerScript()">Get Started</button>
       <a href="https://another-domain-veselov.pages.dev/">Go to another domain</a>
     </div>
   </div>
