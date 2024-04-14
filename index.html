@@ -22,7 +22,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       dataLayer.push({
         'event': 'get started button click',
         'author': 'admin',
-        'title': 'the first button was clicked'
+        'title': 'the first button was clicked',
+        'language': navigator.language,
+        'platform': navigator.platform,
+        'connection': navigator.connection,
+        'browser': navigator.userAgent
       });
 
       window.location.href = 'second-page.html';
